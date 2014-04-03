@@ -1,6 +1,91 @@
+html, body {
+	height: 100%;
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+#containter {
+	min-height: 100%;
+	position: relative;
+}
+
 .main_content {
-	border: 1px solid black;
 	text-align: center;
-	width: 500px;
+	width: 600px;
 	margin: 0px auto;
+	clear: left;
+}
+
+.top_menu {
+	float: right;
+	padding: 10px 0 150px 0;
+	font-size: 0.75em;
+}
+
+.top_menu:ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.top_menu a {
+	display: block;
+	width: 80px;
+	text-decoration: none;
+}
+
+.top_menu li {
+	float: left;
+	display: inline;
+}
+
+.bottom_menu {
+	padding: 150px 0 10px 0;
+	position: absolute;
+	bottom: 0;
+	font-size: 0.75em;
+}
+
+ul.left {
+	float: left;
+}
+
+ul.right {
+	float: right;
+	position: relative;
+}
+
+ul.bottom {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.bottom li {
+	float: left;
+	display: inline;
+}
+
+ul.bottom a {
+	display: block;
+	width: 130px;
+	text-decoration: none;
+}
+
+form input[type=text] {
+	height: 20px;
+	width: 550px;
+	margin: 0 0 25px 0;
+}
+
+form input[type=submit] {
+	padding: 10px;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	margin: 0 10px;
+}
+
+form input[type=submit]:hover {
+	background-color: #ddd;
+	border: 1px solid #ccc;
 }
